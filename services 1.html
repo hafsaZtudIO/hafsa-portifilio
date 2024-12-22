@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Portfolio</title>
+   <style>
+    .active{
+        background-color: aqua;
+    }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #212121;
+}
+
+.services {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+    color: #212121;
+}
+
+.services h2 {
+    font-size: 36px;
+    color: #212121;
+    margin-bottom: 10px;
+}
+
+.services h2 span {
+    color: orange;
+}
+
+.services p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #212121;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 calc(33.333% - 20px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    background-color: orange;
+    color: black;
+}
+
+.service-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.service-item p {
+    font-size: 14px;
+    color: #eee;
+}
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color:#000;
+    font-weight: bold;
+
+}
+nav ul li a:hover{
+    transform: scale3d(1.03);
+    background-color: orange;
+    color: black;
+    box-shadow: 0 0 25px orange;
+    border-radius: 10px;
+}
+
+   </style>
+</head>
+<body>
+    <nav>
+        <img src="images/logo-removebg-preview.png" class="logo" width="130px" height="110px">
+        <ul>
+            <li><a href="new.html">Home</a></li>
+            <li><a href="Services.html" class="active">Services</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="Education.html">Education</a></li>
+           <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+        </ul>
+    </nav>
+    <section class="services">
+        <div class="container">
+            <h2>My <span>Services</span></h2>
+            <p>Here are the professional graphic design services I offer to help bring your ideas to life:</p>
+            <div class="services-list">
+                <div class="service-item">
+                    <h3>Brand Identity Design</h3>
+                    <p>Logos, business cards, branding guidelines, and more.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Print Design</h3>
+                    <p>Flyers, brochures, posters, packaging, and catalogs.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Digital Design</h3>
+                    <p>Social media graphics, banners, and presentations.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Web and UI/UX Design</h3>
+                    <p>Website mockups, mobile app designs, and prototypes.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Motion Graphics</h3>
+                    <p>Animated logos, video graphics, and explainer videos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

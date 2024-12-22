@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <nav>
+        <img src="images/logo-removebg-preview.png" class="logo" width="130px" height="110px">
+        <ul>
+            <li><a href="new.html">Home</a></li>
+            <li><a href="services 1.html">Services</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="Education.html" >Education</a></li>
+            <li><a href="Contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+    <style>
+        
+        .active{background-color: aqua;}
+        
+        nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color:#000;
+    font-weight: bold;
+
+}
+nav ul li a:hover{
+    color: red;
+    transform: scale3d(1.03);
+    background-color: orange;
+    color: black;
+    box-shadow: 0 0 25px orange;
+    border-radius: 10px;
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #212121;
+        }
+
+        .contact-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            font-size: 36px;
+            color: orange;
+            margin-bottom: 20px;
+        }
+
+        .contact-section p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info h3 {
+            font-size: 24px;
+            color: #212121;
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            font-size: 16px;
+            color: #666;
+            margin: 5px 0;
+        }
+
+        .contact-info a {
+            color: orange;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .active{background-color: aqua;}
+    </style>
+</head>
+<body>
+    <section class="contact-section">
+        <h2>Contact <span style="color: #212121;">Me</span></h2>
+        <p>I'd love to hear from you! Feel free to reach out via phone or email:</p>
+        
+        <div class="contact-info">
+            <h3>Contact Details</h3>
+            <p><strong>Phone:</strong> <a href="tel:0637042208">0637042208</a></p>
+            <p><strong>Email:</strong> <a href="mailto:haphsa.eee@gmail.com">haphsa.eee@gmail.com</a></p>
+        </div>
+    </section>
+</body>
+</html>

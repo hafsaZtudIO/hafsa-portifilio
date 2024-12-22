@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Section</title>
+    <style>
+.active{
+    background-color: aqua;
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #212121;
+            color: white;
+        }
+
+        .skills {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .skills h2 {
+            font-size: 36px;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .skills h2 span {
+            color: orange;
+        }
+
+        .skills p {
+            font-size: 16px;
+            color: #aaa;
+            margin-bottom: 30px;
+        }
+
+        .skills-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .skill-item {
+            margin-bottom: 20px;
+        }
+
+        .skill-item h3 {
+            font-size: 18px;
+            color: orange;
+            margin-bottom: 8px;
+        }
+
+        .progress-bar {
+            background-color: #555;
+            height: 8px;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress {
+            height: 100%;
+            background-color: orange;
+            border-radius: 5px;
+            transition: width 0.5s ease;
+        }
+        nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: bold;
+
+}
+nav ul li a:hover{
+    
+    transform: scale3d(1.03);
+    background-color: orange;
+    color: black;
+    box-shadow: 0 0 25px orange;
+    border-radius: 10px;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="images/logo-removebg-preview.png" class="logo" width="130px" height="110px">
+        <ul>
+            <li><a href="new.html" >Home</a></li>
+            <li><a href="services 1.html">Services</a></li>
+            <li><a href="skills.html" class="active">Skills</a></li>
+            <li><a href="Education.html">Education</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="skills">
+        <div class="container">
+            <h2>My <span>Skills</span></h2>
+            <p>Here are some of the key skills I have honed over the years as a graphic designer:</p>
+            <div class="skills-list">
+                <div class="skill-item">
+                    <h3>Adobe Photoshop</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>Adobe Illustrator</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>UI/UX Design</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>Motion Graphics</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>Brand Identity Design</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 95%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
