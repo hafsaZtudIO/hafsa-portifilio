@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="1style.css">
+</head>
+<style>*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background:#eff4fd
+}
+.active{
+    background-color: aqua;
+    
+}
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.home-content h1{
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-left: 6%;
+  
+}
+
+span{
+    color: orange;
+}
+
+.home-content h3{
+    font-size: 30px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    margin-left: 8%;
+    margin-top: 1%;
+}
+
+
+
+.btn{
+    display: inline-block;
+    padding: 20px 20px;
+    background-color: black;
+    border-radius: 30px;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    border: 3px solid orange;
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.btn:hover{
+    transform: scale3d(1.03);
+    background-color: orange;
+    color: black;
+    box-shadow: 0 0 25px orange;
+}
+
+.typing-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.typing-text span{
+    position: relative;
+}
+
+.typing-text span::before{
+    content: "software Developer";
+    color: orange ;
+    animation: words 20s infinite;
+    font-size: 30px;
+}
+
+
+
+
+@keyframes cursor{
+    to{
+        border-left: 3px solid #b74b4b;
+    }
+}
+
+@keyframes words{
+    0%, 10%{
+        content: "Web Developer";
+    }
+    21%, 40%{
+        content: "Graphic Designer";
+    }
+    41%, 60%{
+        content: "Web Designer";
+    }
+    61%, 80%{
+        content: "Student";
+    }
+    81%, 100%{
+        content: "Script Writer";
+    }
+}
+
+@media (max-width: 100px){
+    .home{
+        gap: 4rem;
+    }
+}
+
+@media(max-width:995px){
+    .home{
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+
+    .home .home-content h3{
+        font-size: 2.5rem;
+    }
+
+    .home-content h1{
+        font-size: 5rem;
+    }
+
+    .home-img img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+}
+
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color:#000;
+    font-weight: bold;
+    border-radius:10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+
+}
+nav ul li a:hover{
+    color: red;
+    transform: scale3d(1.03);
+    background-color: orange;
+    color: black;
+    box-shadow: 0 0 25px orange;
+}
+.detel{
+    margin-left: 8%;
+    margin-top: 1%;
+}
+.detel h1{
+font-size: 50px;
+color: #212121;
+margin: 20px;
+}
+span{
+    color: orange;
+}
+.detel p{
+    font-size: 20px;
+    color: #555;
+    line-height: 22px;
+   
+}
+.detel a{
+    background-color: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 20px 0;
+    border-radius: 5 px;
+}
+
+.images{
+    width: 45px;
+    height: 80%;
+    position:absolute;
+    bottom: 0;
+    right:240px;
+}
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s left 1s;
+
+
+}
+.images:hover .shape{
+    bottom: 5%;
+
+}
+.images:hover .sawirkayga{
+    left: 60%;
+}</style>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="images/logo-removebg-preview.png" class="logo" width="130px" height="110px">
+            <ul>
+                <li><a href="new.html" class="active">Home</a></li>
+                <li><a href="services 1.html">Services</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="Education.html">Education</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+       <div class="home-content">
+            <h1>Hi, It's <span>Hafsa</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            
+   
+    </section>
+<div class="detel">
+     <p> This is my official Portfolio Website to <br>show all Details and work experiences
+            </p> 
+            <a href="#" class="btn">Hire me</a>
+        </div>
+</div>
+    </div>
+   <div class="images">
+    <img src="images/shape.png" class="shape">
+    <img src="images/sawirkayga.png" class="sawirkayga">
+   </div>
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Designs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9; 
+            color: #333;
+        }
+
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: orange; 
+            color: #fff; 
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        main {
+            padding: 20px;
+        }
+
+        .design-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .design-gallery article {
+            background-color: #fff; 
+            border: 2px solid orange; 
+            border-radius: 5px;
+            overflow: hidden;
+            width: 400px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            object-fit: cover;
+        }
+        
+.design-gallery article {
+    background-color: #fff;
+    border: 2px solid orange;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease; 
+}
+
+.design-gallery article:hover {
+    transform: scale3d(1.03, 1.03, 1.03); 
+    background-color: orange; 
+    box-shadow: 0 0 25px orange; }
+
+.design-gallery img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    transition: 0.3s ease; 
+}
+
+.design-gallery article:hover img {
+    opacity: 0.8; 
+}
+
+.design-gallery h2 {
+    margin: 10px 0;
+    padding: 0;
+    font-size: 18px;
+    color: transparent;
+    transition: 0.3s ease; 
+   
+}
+
+.design-gallery article:hover h2 {
+    color: #fff; 
+}
+
+
+        .design-gallery img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+        }
+
+        .design-gallery h2 {
+            margin: 10px 0;
+            padding: 0;
+            font-size: 18px;
+            color: orange
+        }
+
+    
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Some of My Designs</h1>
+    </header>
+    <main>
+        <section class="design-gallery">
+            <article>
+                <img src="images/Streaker 1.png" alt="Streaker Design">
+                <h2>Streaker Design</h2>
+            </article>
+            <article>
+                <img src="images/ID design ASSIGNMENT 2.png" alt="Facebook Cover">
+                <h2>Id Card Design</h2>
+            </article>
+            <article>
+                <img src="images/AD design.png" alt="Social Media Poster">
+                <h2>Social Media Poster</h2>
+            </article>
+            <article>
+                <img src="images/billboard 1.png" alt="Social Media Poster">
+                <h2>Billboard</h2>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+</body>
+</html>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Section</title>
+    <style>
+.active{
+    background-color: aqua;
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #212121;
+            color: white;
+        }
+
+        .skills {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .skills h2 {
+            font-size: 36px;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .skills h2 span {
+            color: orange;
+        }
+
+        .skills p {
+            font-size: 16px;
+            color: #aaa;
+            margin-bottom: 30px;
+        }
+
+        .skills-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .skill-item {
+            margin-bottom: 20px;
+        }
+
+        .skill-item h3 {
+            font-size: 18px;
+            color: orange;
+            margin-bottom: 8px;
+        }
+
+        .progress-bar {
+            background-color: #555;
+            height: 8px;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress {
+            height: 100%;
+            background-color: orange;
+            border-radius: 5px;
+            transition: width 0.5s ease;
+        }
+        nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: bold;
+
+}
+nav ul li a:hover{
+    
+    transform: scale3d(1.03);
+    background-color: orange;
+    color: black;
+    box-shadow: 0 0 25px orange;
+    border-radius: 10px;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="images/logo-removebg-preview.png" class="logo" width="130px" height="110px">
+        <ul>
+            <li><a href="new.html" >Home</a></li>
+            <li><a href="services 1.html">Services</a></li>
+            <li><a href="skills.html" class="active">Skills</a></li>
+            <li><a href="Education.html">Education</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="skills">
+        <div class="container">
+            <h2>My <span>Skills</span></h2>
+            <p>Here are some of the key skills I have honed over the years as a graphic designer:</p>
+            <div class="skills-list">
+                <div class="skill-item">
+                    <h3>Adobe Photoshop</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>Adobe Illustrator</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>UI/UX Design</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>Motion Graphics</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>Brand Identity Design</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 95%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <nav>
+        <img src="images/logo-removebg-preview.png" class="logo" width="130px" height="110px">
+        <ul>
+            <li><a href="new.html">Home</a></li>
+            <li><a href="services 1.html">Services</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="Education.html" >Education</a></li>
+            <li><a href="Contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+    <style>
+        
+        .active{background-color: aqua;}
+        
+        nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color:#000;
+    font-weight: bold;
+
+}
+nav ul li a:hover{
+    color: red;
+    transform: scale3d(1.03);
+    background-color: orange;
+    color: black;
+    box-shadow: 0 0 25px orange;
+    border-radius: 10px;
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #212121;
+        }
+
+        .contact-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            font-size: 36px;
+            color: orange;
+            margin-bottom: 20px;
+        }
+
+        .contact-section p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info h3 {
+            font-size: 24px;
+            color: #212121;
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            font-size: 16px;
+            color: #666;
+            margin: 5px 0;
+        }
+
+        .contact-info a {
+            color: orange;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .active{background-color: aqua;}
+    </style>
+</head>
+<body>
+    <section class="contact-section">
+        <h2>Contact <span style="color: #212121;">Me</span></h2>
+        <p>I'd love to hear from you! Feel free to reach out via phone or email:</p>
+        
+        <div class="contact-info">
+            <h3>Contact Details</h3>
+            <p><strong>Phone:</strong> <a href="tel:0637042208">0637042208</a></p>
+            <p><strong>Email:</strong> <a href="mailto:haphsa.eee@gmail.com">haphsa.eee@gmail.com</a></p>
+        </div>
+    </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Designs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9; 
+            color: #333;
+        }
+
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: orange; 
+            color: #fff; 
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        main {
+            padding: 20px;
+        }
+
+        .design-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .design-gallery article {
+            background-color: #fff; 
+            border: 2px solid orange; 
+            border-radius: 5px;
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .design-gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .design-gallery h2 {
+            margin: 10px 0;
+            padding: 0;
+            font-size: 18px;
+            color: orange
+        }
+
+    
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Some of My Designs</h1>
+    </header>
+    <main>
+        <section class="design-gallery">
+            <article>
+                <img src="images/Streaker 1.png" alt="Streaker Design">
+                <h2>Streaker Design</h2>
+            </article>
+            <article>
+                <img src="images/Facebook cover 1.png" alt="Facebook Cover">
+                <h2>Social Media Poster</h2>
+            </article>
+            <article>
+                <img src="images/AD design.png" alt="Social Media Poster">
+                <h2>ID Card Design</h2>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Educational Journey</title>
+    <div class="hero">
+        <nav>
+            <img src="images/logo-removebg-preview.png" class="logo" width="130px" height="110px">
+            <ul>
+                <li><a href="new.html">Home</a></li>
+                <li><a href="services 1.html">Services</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="Education.html" class="active">Education</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+            <style>
+                .active{background-color: aqua;}
+                nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color:#000;
+    font-weight: bold;
+
+}
+nav ul li a:hover{
+    transform: scale3d(1.03);
+    background-color: orange;
+    color: black;
+    box-shadow: 0 0 25px orange;
+    border-radius: 10px;
+}
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #f4f4f4; /* Light Gray Background */
+                    color: #212121; /* Dark Text */
+                    line-height: 1.6;
+                }
+        
+                .education-section {
+                    padding: 50px 20px;
+                    text-align: center;
+                }
+        
+                .education-section h2 {
+                    font-size: 36px;
+                    color: orange;
+                    margin-bottom: 20px;
+                }
+        
+                .education-section p {
+                    font-size: 18px;
+                    color: #555;
+                    margin-bottom: 15px;
+                }
+        
+                .highlight {
+                    color: orange;
+                    font-weight: bold;
+                }
+        
+                .education-box {
+                    max-width: 800px;
+                    margin: 20px auto;
+                    text-align: left;
+                    background-color: white; 
+                    padding: 20px;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                }
+        
+                .education-box h3 {
+                    font-size: 24px;
+                    color: #212121; 
+                    margin-bottom: 10px;
+                }
+        
+                .education-box p {
+                    font-size: 16px;
+                    color: #666; 
+                }
+            </style>
+        </head>
+        <body>
+            <section class="education-section">
+                <h2>My <span class="highlight">Educational Journey</span></h2>
+                <p>I believe education is the key to success and personal growth. Here's my story:</p>
+                
+                <div class="education-box">
+                    <h3>Primary and Secondary Education</h3>
+                    <p>I started my formal education in <span class="highlight">2014</span> at Al Huda Primary School in Hargeisa, where I studied from Grade 1 to Grade 8, graduating in <span class="highlight">2022</span>.</p>
+                    <p>Currently, I am a Form 3 student at <span class="highlight">Al Huda Secondary School</span>, working hard to balance my studies and personal growth.</p>
+                </div>
+        
+                <div class="education-box">
+                    <h3>Quranic Studies</h3>
+                    <p>Alongside my formal education, I attended a Quranic madrasa and completed the memorization of the Quran in <span class="highlight">2019</span>. Alhamdulillah, this has been one of my proudest achievements, and I am grateful to Allah for His guidance.</p>
+                </div>
+        
+                <div class="education-box">
+                    <h3>Diplomas and Lifelong Learning</h3>
+                    <p>I have also taken part in various diploma programs, including one in <span class="highlight">IT & Social Work</span> and others that have enriched my knowledge and skills. Now, I am balancing my secondary school studies with TANAAD college-level courses as I prepare for <span class="highlight">2024</span> and beyond.</p>
+                </div>
+            </section>
+        </body>
+        </html>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Services - Portfolio</title>
+           <style>
+            .active{
+                background-color: aqua;
+            }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #212121;
+        }
+        
+        .services {
+            padding: 50px 20px;
+            background-color: #fff;
+            text-align: center;
+            color: #212121;
+        }
+        
+        .services h2 {
+            font-size: 36px;
+            color: #212121;
+            margin-bottom: 10px;
+        }
+        
+        .services h2 span {
+            color: orange;
+        }
+        
+        .services p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        
+        .services-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .service-item {
+            background-color: #212121;
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            flex: 1 1 calc(33.333% - 20px); 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .service-item:hover {
+            transform: translateY(-10px);
+            background-color: orange;
+            color: black;
+        }
+        
+        .service-item h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: white;
+        }
+        
+        .service-item p {
+            font-size: 14px;
+            color: #eee;
+        }
+        nav{
+            display: flex;
+            width: 84%;
+            margin: auto;
+            padding: 20px 0;
+            align-items: center;
+            justify-content: space-between;
+        
+        }
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 10px 20px;
+        
+        }
+        nav ul li a{
+            text-decoration: none;
+            color:#000;
+            font-weight: bold;
+        
+        }
+        nav ul li a:hover{
+            transform: scale3d(1.03);
+            background-color: orange;
+            color: black;
+            box-shadow: 0 0 25px orange;
+            border-radius: 10px;
+        }
+        
+           </style>
+        </head>
+        <body>
+            <nav>
+                <img src="images/logo-removebg-preview.png" class="logo" width="130px" height="110px">
+                <ul>
+                    <li><a href="new.html">Home</a></li>
+                    <li><a href="Services.html" class="active">Services</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="Education.html">Education</a></li>
+                   <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+                </ul>
+            </nav>
+            <section class="services">
+                <div class="container">
+                    <h2>My <span>Services</span></h2>
+                    <p>Here are the professional graphic design services I offer to help bring your ideas to life:</p>
+                    <div class="services-list">
+                        <div class="service-item">
+                            <h3>Brand Identity Design</h3>
+                            <p>Logos, business cards, branding guidelines, and more.</p>
+                        </div>
+                        <div class="service-item">
+                            <h3>Print Design</h3>
+                            <p>Flyers, brochures, posters, packaging, and catalogs.</p>
+                        </div>
+                        <div class="service-item">
+                            <h3>Digital Design</h3>
+                            <p>Social media graphics, banners, and presentations.</p>
+                        </div>
+                        <div class="service-item">
+                            <h3>Web and UI/UX Design</h3>
+                            <p>Website mockups, mobile app designs, and prototypes.</p>
+                        </div>
+                        <div class="service-item">
+                            <h3>Motion Graphics</h3>
+                            <p>Animated logos, video graphics, and explainer videos.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </body>
+        </html>
+        
